@@ -1,33 +1,50 @@
 body {
   overflow-y: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 .main {
   display: flex;
-  height: 80vh;
+  height: 100vh;
   max-width: 100%;
-  
 }
 
 .left-container {
   width: 250px;
-  height: 100vh;
   overflow-y: scroll;
   overflow-x: hidden;
+  position: relative;
 }
 
 .right-container {
   width: 100%;
-  height: 100vh;
 }
 
-/* --------------- */
+.picture-preview:hover {
+  opacity: 0.5;
+}
+
+.picture-preview {
+  cursor: pointer;
+}
+
+.preview-image {
+  height: 200px;
+  width: 200px;
+}
 
 .picture-view {
   display: flex;
+  width: 100%;
 }
 
-.image {
-  width: auto;
-  height: 100vh;
+.view-image {
+  max-width:100% ;
+  height: 100vh; 
+}
+
+.photo-details {
+  margin: 0 auto;
+  padding: 3px;
+  width: 200px;
 }
